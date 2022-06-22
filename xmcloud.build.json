@@ -1,9 +1,37 @@
 {
+    "deployItems": {
+    "modules": [
+        "Foundation.*",
+        "Feature.*",
+        "Project.*"
+        ]
+    },
+    "buildTargets": [
+        "./src/Environment/platform/Mvp.Environment.Platform.csproj", 
+        "./src/Foundation/Configuration/rendering/Mvp.Foundation.Configuration.Rendering.csproj",
+        "./src/Feature/BasicContent/rendering/MVP.Feature.BasicContent.Rendering.csproj",
+        "./src/Feature/Navigation/rendering/Mvp.Feature.Navigation.Rendering.csproj",
+        "./src/Feature/People/rendering/Mvp.Feature.People.Rendering.csproj",
+        "./src/Project/MvpSite/rendering/Mvp.Project.MvpSite.Rendering.csproj",
+        "./src/XmCloudIntroductionSolution.sln"
+    ],
     "renderingHosts": {
-        "xmcloudpreview": {
-            "path": "./src/rendering",
-            "nodeVersion": "14.15.3",
-            "jssDeploymentSecret":"110F1C44A496B45478640DD36F80C18C9",
+        "mvp-rendering": {
+            "path": "./src/Project/MvpSite/rendering",
+            "nodeJsVersion": "16.3.1",
+            "jssDeploymentSecret": "super-secret-value",
+            "enabled": true
+        },
+        "sugcon-eu": {
+            "path": "./src/Project/Sugcon/SugconEuSxa",
+            "nodeJsVersion": "16.3.1",
+            "jssDeploymentSecret": "super-secret-value",
+            "enabled": true
+        },
+        "sugcon-anz": {
+            "path": "./src/Project/Sugcon/SugconAnzSxa",
+            "nodeJsVersion": "16.3.1",
+            "jssDeploymentSecret": "super-secret-value",
             "enabled": true
         }
     }
