@@ -7,12 +7,17 @@
         ]
     },
     "buildTargets": [
-        "./src/XmCloudIntroductionSolution.sln"
+        "./src/Environment/platform/Mvp.Environment.Platform.csproj", 
+        "./src/Foundation/Configuration/rendering/Mvp.Foundation.Configuration.Rendering.csproj",
+        "./src/Feature/BasicContent/rendering/MVP.Feature.BasicContent.Rendering.csproj",
+        "./src/Feature/Navigation/rendering/Mvp.Feature.Navigation.Rendering.csproj",
+        "./src/Feature/People/rendering/Mvp.Feature.People.Rendering.csproj",
+        "./src/Project/MvpSite/rendering/Mvp.Project.MvpSite.Rendering.csproj"
     ],
     "renderingHosts": {
         "sugcon-anz": {
             "path": "./src/Project/Sugcon/SugconAnzSxa",
-            "nodeJsVersion": "16.3.1",
+            "nodeJsVersion": "16.15.1",
             "jssDeploymentSecret": "super-secret-value",
             "enabled": true
         }
