@@ -17,7 +17,7 @@
     "renderingHosts": {
         "sugcon-anz": {
             "path": "./src/Project/Sugcon/SugconAnzSxa",
-            "nodeJsVersion": "16.15.1",
+            "nodeVersion": "16.15.1",
             "jssDeploymentSecret": "super-secret-value",
             "enabled": true
         }
